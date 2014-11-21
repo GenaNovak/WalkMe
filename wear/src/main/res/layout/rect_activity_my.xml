@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MyActivity"
+    tools:deviceIds="wear_square"
+    android:weightSum="1"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonPushUp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:onClick="chooseKind"
+        android:background="@drawable/pushuplogo2"
+        android:tag="PushUp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonAbs"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:onClick="chooseKind"
+        android:background="@drawable/abslogo2"
+        android:tag="Abs"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonSquats"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:onClick="chooseKind"
+        android:background="@drawable/restlogo"
+        android:tag="Rest"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageButton
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButtonLifting"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:onClick="chooseKind"
+        android:background="@drawable/liftinglogo3"
+        android:tag="Lifting"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
